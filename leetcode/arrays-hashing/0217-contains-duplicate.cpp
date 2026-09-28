@@ -5,13 +5,14 @@
 // Time taken: __5 min
 //
 // Approach, in two lines of my own words:
-// create a map and iterate over the nums and add from 0 and check whether 
+// create a map and iterate over the nums and add from 0 and check whether
 // the value is greater than 1.
 // Complexity: time O(n), space O(n)
 // C++ I learned: unorderd_map and how to loop
 
 #include <cassert>
 #include <iostream>
+#include <unordered_map>
 #include <unordered_set>
 #include <vector>
 
