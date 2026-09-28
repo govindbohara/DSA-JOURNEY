@@ -16,11 +16,18 @@
 #include <vector>
 
 class Solution {
-public:
+   public:
     bool containsDuplicate(std::vector<int>& nums) {
         // Your solution here. Hint only if stuck past 20 minutes:
         // what data structure answers "have I seen this before?" in O(1)?
         (void)nums;
+        std::unordered_map<int, int> map;
+        for (int n : nums) {
+            map[n]++;
+            if (map[n] > 1) {
+                return true;
+            }
+        }
         return false;
     }
 };
