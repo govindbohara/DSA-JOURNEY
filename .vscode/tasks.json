@@ -11,7 +11,7 @@
                 "-pedantic-errors",
                 "-Wall",
                 "-Wextra",
-                "${file}",
+                "${fileDirname}/*.cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
