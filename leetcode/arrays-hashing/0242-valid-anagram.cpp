@@ -15,12 +15,20 @@
 #include <string>
 
 class Solution {
-public:
+   public:
     bool isAnagram(std::string s, std::string t) {
-        // Your solution here.
-        (void)s;
-        (void)t;
-        return false;
+        if (s.length() != t.length()) return false;
+        int freq[128]{};
+
+        for (char c : s) {
+            freq[c - 'a']++;
+        }
+
+        for (char c : t) {
+            if (--freq[c - 'a'] < 0) return false;
+        }
+
+        return true;
     }
 };
 
@@ -29,7 +37,7 @@ int main() {
 
     assert(s.isAnagram("anagram", "nagaram") == true);
     assert(s.isAnagram("rat", "car") == false);
-    assert(s.isAnagram("a", "ab") == false);   // different lengths
+    assert(s.isAnagram("a", "ab") == false);  // different lengths
 
     std::cout << "Valid Anagram: all tests passed\n";
 }
