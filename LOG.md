@@ -23,3 +23,4 @@ auto& pair: map -- here auto is type auto and & is the value arent copied deeply
 push_back(): it adds the item at last in the vector
 
 2026-09-28 — 95 min — learncpp ch.4 finished incl. summary quiz; Majority Element (27 min, 1 hint, Boyer-Moore); revisits: Valid Sudoku (13 min, clean after 3 hints last time), Product of Array Except Self (4 min, read) — Sort Colors still to do. Stuck on: recalling prefix/suffix but not being able to write it unaided.
+
