@@ -15,16 +15,28 @@ option(ENABLE_SANITIZERS "Build with AddressSanitizer and UBSan" ON)
 enable_testing()
 
 # Every .cpp under leetcode/ and learncpp/ becomes its own executable and test.
+# Exception: a directory with a main.cpp is one multi-file program, so all of
+# its .cpp files link into a single executable named after main.cpp.
 file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS
   ${CMAKE_SOURCE_DIR}/leetcode/*.cpp
   ${CMAKE_SOURCE_DIR}/learncpp/*.cpp)
 
 foreach(src IN LISTS SOURCES)
+  get_filename_component(dir ${src} DIRECTORY)
+  get_filename_component(file ${src} NAME)
+  set(srcs ${src})
+  if(EXISTS ${dir}/main.cpp)
+    if(NOT file STREQUAL "main.cpp")
+      continue()
+    endif()
+    file(GLOB srcs CONFIGURE_DEPENDS ${dir}/*.cpp)
+  endif()
+
   file(RELATIVE_PATH rel ${CMAKE_SOURCE_DIR} ${src})
   string(REGEX REPLACE "\\.cpp$" "" name ${rel})
   string(REPLACE "/" "__" name ${name})
 
-  add_executable(${name} ${src})
+  add_executable(${name} ${srcs})
   target_include_directories(${name} PRIVATE ${CMAKE_SOURCE_DIR}/include)
   target_compile_options(${name} PRIVATE -Wall -Wextra -Wpedantic -Wshadow)
 
