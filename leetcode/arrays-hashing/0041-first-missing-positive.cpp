@@ -24,7 +24,7 @@ class Solution {
    public:
     int firstMissingPositive(std::vector<int>& nums) {
         for (int i = 0; i < nums.size() - 1; i++) {
-            while (nums[i] <= 0 && nums[i] <= nums.size() && nums[nums[i] - 1] != nums[i]) {
+            while (nums[i] > 0 && nums[i] <= nums.size() && nums[nums[i] - 1] != nums[i]) {
             }
             {
                 std::swap(nums[i], nums[nums[i] - 1]);
