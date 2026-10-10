@@ -5,10 +5,10 @@
 // Time taken: __ min
 //
 // Approach, in two lines of my own words:
-//
-//
-// Complexity: time O(?), space O(?)
-// C++ I learned:
+// On '[' push the count and the string built so far, then start fresh.
+// On ']' pop them and set curr = saved + curr repeated count times.
+// Complexity: time O(n + output length), space O(n + output length)
+// C++ I learned: std::stack, std::isdigit, num = num * 10 + (c - '0')
 
 #include <algorithm>
 #include <cassert>
