@@ -7,7 +7,7 @@
 // Approach, in two lines of my own words:
 //
 //
-// Complexity: time O(?), space O(?)
+// Complexity: time O(n), space O(n)
 // C++ I learned:
 
 #include <algorithm>
