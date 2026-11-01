@@ -18,14 +18,14 @@ Every solution is its own small program with tests, built with CMake and checked
 
 ## Progress
 
-| Month    | Patterns                                   | Solved |
-| -------- | ------------------------------------------ | ------ |
-| Oct 2026 | arrays-hashing, two-pointers, stack        | 0 / 19 |
-| Nov 2026 | sliding-window, binary-search, linked-list | 0 / 21 |
-| Dec 2026 | trees, tries, heap                         | 0 / 20 |
-| Jan 2027 | backtracking, graphs, bit-manipulation     | 0 / 20 |
-| Feb 2027 | dp-1d, intervals, greedy                   | 0 / 19 |
-| Mar 2027 | advanced-graphs, dp-2d, math-geometry      | 0 / 13 |
+| Month    | Patterns                                   | Solved  |
+| -------- | ------------------------------------------ | ------- |
+| Oct 2026 | arrays-hashing, two-pointers, stack        | 32 / 19 |
+| Nov 2026 | sliding-window, binary-search, linked-list | 20 / 21 |
+| Dec 2026 | trees, tries, heap                         | 1 / 20  |
+| Jan 2027 | backtracking, graphs, bit-manipulation     | 0 / 20  |
+| Feb 2027 | dp-1d, intervals, greedy                   | 0 / 19  |
+| Mar 2027 | advanced-graphs, dp-2d, math-geometry      | 0 / 13  |
 
 ## Build and run
 
