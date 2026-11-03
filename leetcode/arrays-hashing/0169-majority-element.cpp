@@ -7,8 +7,11 @@
 // Approach, in two lines of my own words:
 //
 //
-// Complexity: time O(?), space O(?)
+// Complexity: time O(n), space O(1)
 // C++ I learned:
+// crete two pointers curr and count and check if count is 0 then set curr to n
+// and now check if curr is equal to n if yes increment count else decrement count
+// return curr
 
 #include <algorithm>
 #include <cassert>
