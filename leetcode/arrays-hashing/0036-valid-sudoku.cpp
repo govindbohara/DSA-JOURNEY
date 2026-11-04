@@ -5,9 +5,11 @@
 // Time taken: __ min
 //
 // Approach, in two lines of my own words:
+// first set the space for rows , cols and boxes and loop 9 times inner and outer and check if the
+// item is in the array if yes return false of not set to 1; to get boxId =. (row/3) * 3 + (cols/3)
 //
 //
-// Complexity: time O(?), space O(?)
+// Complexity: time O(1), space O(1) because i run both loops 9 times and space is constant 9*9
 // C++ I learned:
 
 #include <algorithm>
