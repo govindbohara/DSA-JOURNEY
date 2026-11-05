@@ -5,9 +5,11 @@
 // Time taken: __ min
 //
 // Approach, in two lines of my own words:
+// create a prefix of 1 and output array of size n and update the output[i] with prefix and update
+// prefix and second loop create suffix of 1 and update output[i] from reverse loop and multiply
+// with suffix and update suffix = suffix * nums[i]
 //
-//
-// Complexity: time O(?), space O(?)
+// Complexity: time O(n), space O(1) excluding output array
 // C++ I learned:
 
 #include <algorithm>
