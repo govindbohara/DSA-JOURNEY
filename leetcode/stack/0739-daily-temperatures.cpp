@@ -5,9 +5,9 @@
 // Time taken: __ min
 //
 // Approach, in two lines of my own words:
+// used monotonic stack approach store the index not the value
 //
-//
-// Complexity: time O(?), space O(?)
+// Complexity: time O(n), space O(n)
 // C++ I learned:
 
 #include <algorithm>
