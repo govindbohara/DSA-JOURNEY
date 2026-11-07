@@ -5,9 +5,11 @@
 // Time taken: __ min
 //
 // Approach, in two lines of my own words:
+// first loop upto size of n and check nums[i] > 0 && nums[i] <= nums.size() && nums[nums[i] - 1] !=
+// nums[i] and swap and sort and check from 0 to n and check which number is missing if not then
+// return size() +1
 //
-//
-// Complexity: time O(?), space O(?)
+// Complexity: time O(n), space O(1)
 // C++ I learned:
 
 #include <algorithm>
