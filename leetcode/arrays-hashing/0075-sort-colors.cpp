@@ -5,9 +5,10 @@
 // Time taken: __ min
 //
 // Approach, in two lines of my own words:
+// check if num is 2 and 0 if 2 then swap with right , left and right-- and if 0 then swap mid with
+// left and  left++ mid++, else mid++
 //
-//
-// Complexity: time O(?), space O(?)
+// Complexity: time O(n), space O(1)
 // C++ I learned:
 
 #include <algorithm>
